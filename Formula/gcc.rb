@@ -43,7 +43,7 @@ class Gcc < Formula
     #  - Ada, which requires a pre-existing GCC Ada compiler to bootstrap
     #  - Go, currently not supported on macOS
     #  - BRIG
-    languages = %w[c c++ objc obj-c++ fortran]
+    languages = %w[c c++ objc obj-c++ fortran d]
 
     osmajor = `uname -r`.split(".").first
     pkgversion = "Homebrew GCC #{pkg_version} #{build.used_options*" "}".strip
